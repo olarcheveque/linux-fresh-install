@@ -28,6 +28,8 @@ GIT & SVN
 =========
 
 * sudo apt-get install git
+* git config --global user.name "Olivier Larchevêque"
+* git config --global user.email olivier.larcheveque@gmail.com
 * sudo apt-get install subversion
 
 SSH
