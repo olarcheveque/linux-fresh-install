@@ -1,0 +1,59 @@
+DUAL BOOT WIN + UBUNTU
+======================
+
+* installer ubuntu en mode 64bits EFI
+* /etc/default/grub : mettre à jour le fichier default de grub (pas de os-prober)
+* /etc/grub.d/40_custom : mettre à jour le fichier custom de grub pour pour charger Windows
+* regénérer la configuration de grub : grub-mkconfig -o /boot/grub/grub.cfg
+
+VIM
+===
+
+* sudo atp-get install vim
+* cd ~
+* git clone git@github.com:olarcheveque/vim.git ~/.vim
+* ln -s ~/.vim/vimrc .vimrc
+* cd ~/.vim
+* ./up_submodule.sh
+
+XMONAD
+======
+
+* sudo apt-get install xmonad gnome-panel
+* /usr/share/xsessions/xmonad-gnome.desktop : créer le fichier
+* copie de .xmonad dans ~
+* xmonad --recompile
+
+GIT & SVN
+=========
+
+* sudo apt-get install git
+* sudo apt-get install subversion
+
+SSH
+===
+
+* recopie de mes clefs : .ssh dans ~
+
+
+PYTHON
+======
+
+* sudo apt-get install python-pip
+* sudo pip install virtualenv
+* sudo pip install virtualenvwrapper
+
+
+PYTHON (MYSQL)
+==============
+
+* sudo apt-get install libmysqlclient-dev
+* sudo apt-get install python-dev
+* pip install MySQL-python
+
+MYSQL
+=====
+
+* sudo apt-get install mysql-server
+* sudo apt-get install phpmyadmin
+* sudo echo "127.0.0.1  db" >> /etc/hosts

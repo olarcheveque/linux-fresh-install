@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Xmonad Gnome Classic
+Comment=Tiling window manager
+Exec=gnome-session --session=xmonad
+TryExec=gnome-session
+Type=XSession
